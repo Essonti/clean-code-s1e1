@@ -16,7 +16,7 @@
     width: 100%;
 }
 
-.head-container .more-info-reference {
+.head-container > .more-info-reference {
     font-family: fantasy, cursive;
 }
 
@@ -33,7 +33,8 @@
     margin: 0 auto 0;
 }
 
-.task, .task-input {
+.task, 
+.task-input {
     width: 56%;
     display: inline-block;
     flex-grow: 1;
@@ -43,16 +44,21 @@
     display: flex;
 }
 
-.incomplete-tasks, .complete-tasks {
+.incomplete-tasks, 
+.complete-tasks {
     margin: 0;
     padding: 0px;
 }
 
-.task-container, .edit-mode, .title {
+.task-container, 
+.edit-mode, 
+.title {
     list-style: none;
 }
 
-.add, .edit, .delete {
+.add, 
+.edit, 
+.delete {
     background: none;
     border: 0px;
     color: #888;
@@ -62,7 +68,9 @@
     cursor: pointer;
 }
 
-.add:hover, .edit:hover, .delete:hover {
+.add:hover, 
+.edit:hover, 
+.delete:hover {
     color: #3a3A3a;
 }
 
@@ -106,7 +114,8 @@
 }
 
 /* Task list */
-.task-container, .edit-mode {
+.task-container, 
+.edit-mode {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -115,7 +124,8 @@
     align-items: center;
 }
 
-.task-container > *, .edit-mode > * {
+.task-container > *,
+.edit-mode > * {
     vertical-align: middle;
 }
 
