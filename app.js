@@ -64,7 +64,7 @@ var addTask=function(){
     //Create a new list item with the text from the #new-task:
     if (!taskInput.value) return;
     var listItem=createNewTaskElement(taskInput.value);
-    //listItem.classList.toggle("task-container");
+    listItem.classList.toggle("task-container");
 
     //Append listItem to incompleteTaskHolder
     incompleteTaskHolder.appendChild(listItem);
@@ -100,7 +100,7 @@ var editTask=function(){
 
     //toggle .editmode on the parent.
     listItem.classList.toggle("edit-mode");
-    //listItem.classList.toggle("task-container");
+    listItem.classList.toggle("task-container");
 };
 
 
