@@ -107,10 +107,10 @@
 }
 
 /* .task-container > input, .edit-mode > input[type="checkbox"] { */
-.task-checkbox{
+.task-checkbox {
     margin: 0 10px;
 }
-.task-container > label, .edit-mode > label {
+.task {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
