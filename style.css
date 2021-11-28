@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.page {
     background-color: #f8f8f8;
     color: #333;
     font-family: Lato, sans-serif;
@@ -34,11 +34,11 @@ body {
 .add-item-wrapper {
     display: flex;
 }
-ul {
+.incomplete-tasks, .complete-tasks {
     margin:0;
     padding: 0px;
 }
-li, h3 {
+.task-container, .edit-mode, .title {
     list-style:none;
 }
 input,button{
@@ -57,7 +57,7 @@ button:hover {
     color: #3a3A3a;
 }
 /* Heading */
-h3,
+.title,
 label[for="new-task"] {
     color: #333;
     font-weight: 700;
@@ -93,7 +93,7 @@ input#new-task {
 }
 
 /* Task list */
-li {
+.task-container, .edit-mode {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -102,14 +102,14 @@ li {
     justify-content: space-between;
     align-items: center;
 }
-li > * {
+.task-container > *, .edit-mode > * {
     vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.task-container > input, .edit-mode > input[type="checkbox"] {
     margin: 0 10px;
 }
-li > label {
+.task-container > label, .edit-mode > label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
