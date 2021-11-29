@@ -123,8 +123,10 @@ var taskCompleted=function(){
     console.log("Complete Task...");
 
     //Append the task list item to the #completed-tasks
+
     var listItem=this.parentNode;
     completedTasksHolder.appendChild(listItem);
+    listItem.classList.toggle("compleate")
     bindTaskEvents(listItem, taskIncomplete);
 
 }
@@ -137,6 +139,7 @@ var taskIncomplete=function(){
     //Append the task list item to the #incompleteTasks.
     var listItem=this.parentNode;
     incompleteTaskHolder.appendChild(listItem);
+    listItem.classList.toggle("compleate")
     bindTaskEvents(listItem,taskCompleted);
 }
 

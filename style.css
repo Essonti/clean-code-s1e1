@@ -151,7 +151,7 @@
 }
 
 /* Completed */
-#compleate-task {
+.compleate {
     text-decoration: line-through;
     color: #888;
 }
